@@ -16,6 +16,13 @@ class DialogBox extends StatelessWidget {
       content: Container(
         height: 120,
         child:
+            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+          //get user input
+          TextField(
+            controller: controller,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: "Add a new task",
             
             ),
           ),
